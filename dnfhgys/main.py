@@ -1,8 +1,10 @@
 from time import sleep
 
 from ascript.android import action
-from dnfhgys.actions import decomposeObject
+from dnfhgys.actions import decomposeObject, saleObject, setSetting, switchRole, task
 from dnfhgys.utils.index import waitUntilFindTxt, waitUntilFindTxtAndClick
+from ascript.android.screen import FindColors, FindImages
+from ascript.android.system import R
 
 
 def main():
@@ -28,4 +30,14 @@ def main():
     # action.click(640, 672)
 
     print("进入主房间")
-    decomposeObject()
+    # decomposeObject()
+    # saleObject()
+    # TODO 日常领取、日常活动、卡片合成、每日成就
+    # 设置
+    setSetting()
+    # 开等级宝箱?
+    # 购买白色小方块、红、蓝
+    # 关闭弹窗
+    # 开始任务
+    # task()
+    switchRole(3)
